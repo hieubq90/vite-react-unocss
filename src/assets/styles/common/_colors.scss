@@ -1,0 +1,11 @@
+@import './variables';
+
+:root {
+  --primary: $primary;
+  --primary-text: $primary-text;
+}
+
+[data-theme='dark'] {
+  --primary: $dark-primary;
+  --primary-text: $dark-primary-text;
+}
