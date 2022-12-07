@@ -11,8 +11,10 @@ import {
   transformerVariantGroup,
 } from 'unocss'
 import { presetScrollbar } from 'unocss-preset-scrollbar'
-import presetTheme from 'unocss-preset-theme'
-import type { Theme } from 'unocss/preset-uno'
+// import presetTheme from 'unocss-preset-theme'
+// import type { Theme } from 'unocss/preset-uno'
+
+
 
 export default defineConfig({
   shortcuts: [],
@@ -32,7 +34,9 @@ export default defineConfig({
     presetWebFonts({
       provider: 'none',
       fonts: {
-        sans: ['Roboto', 'sans-serif'],
+        sans: ['Roboto', 'Arial', 'sans-serif'],
+        body: ['Roboto', 'Arial', 'sans-serif'],
+        mulish: ['Mulish', 'Arial', 'sans-serif'],
       },
     }),
     presetIcons({
@@ -50,16 +54,16 @@ export default defineConfig({
     }),
     presetScrollbar(),
     // @ts-ignore
-    presetTheme<Theme>({
-      theme: {
-        dark: {
-          colors: {
-            primary: '#0078f0',
-            primaryText: '#3A3C6D',
-          },
-        },
-      },
-    }),
+    // presetTheme<Theme>({
+    //   theme: {
+    //     dark: {
+    //       colors: {
+    //         primary: '#0078f0',
+    //         primaryText: '#3A3C6D',
+    //       },
+    //     },
+    //   },
+    // }),
   ],
   transformers: [transformerDirectives(), transformerVariantGroup()],
   safelist: 'prose prose-sm m-auto text-left'.split(' '),
