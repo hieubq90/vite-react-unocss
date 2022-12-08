@@ -6,5 +6,21 @@ import webfontDownload from 'vite-plugin-webfont-dl'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), Unocss(), webfontDownload()],
+  plugins: [
+    react(),
+    Unocss({
+      /* options */
+      configFile: 'unocss.config.ts',
+    }),
+    webfontDownload(),
+  ],
+  resolve: {
+    alias: [
+      { find: '~', replacement: path.resolve(__dirname, 'src') },
+      {
+        find: '@',
+        replacement: path.resolve(__dirname, 'src'),
+      },
+    ],
+  },
 })

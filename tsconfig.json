@@ -18,7 +18,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "src/*"
+      ],
+      "@/*": [
+        "src/*"
+      ]
+    }
   },
   "include": [
     "unocss.config.ts",
@@ -26,6 +35,9 @@
     "src/**/*.ts",
     "src/**/*.d.ts",
     "src/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
   ],
   "references": [
     {

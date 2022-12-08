@@ -1,12 +1,12 @@
 import { useState } from 'react'
-import reactLogo from './assets/icons/react.svg'
-import viteLogo from './assets/icons/vite.svg'
+import reactLogo from '@/assets/svg/react.svg'
+import viteLogo from '@/assets/svg/vite.svg'
 
-function App() {
+function HomePage() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
+    <div className="">
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -17,18 +17,11 @@ function App() {
       </div>
       <h1>Index Page</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+        <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
     </div>
   )
 }
 
-export default App
+export default HomePage

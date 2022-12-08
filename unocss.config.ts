@@ -14,8 +14,6 @@ import { presetScrollbar } from 'unocss-preset-scrollbar'
 // import presetTheme from 'unocss-preset-theme'
 // import type { Theme } from 'unocss/preset-uno'
 
-
-
 export default defineConfig({
   shortcuts: [],
   theme: {
@@ -43,9 +41,7 @@ export default defineConfig({
       scale: 1.2,
       warn: true,
       collections: {
-        others: FileSystemIconLoader('./src/assets/icons', (svg) =>
-          svg.replace(/^<svg /, '<svg fill="currentColor" ')
-        ),
+        edso: FileSystemIconLoader('./src/assets/icons', (svg) => svg),
       },
       extraProperties: {
         display: 'inline-block',
