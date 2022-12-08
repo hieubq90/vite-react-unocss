@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --base=/cmf",
-    "build": "tsc && vite build --base=/cmf",
+    "dev": "vite --base=/cmf/",
+    "build": "tsc && vite build --base=/cmf/",
     "preview": "vite preview",
     "lint": "eslint --ext .js,.ts,.jsx,.tsx src",
     "format": "yarn run lint --fix & yarn prettier --write 'src/**/*.{js,jsx,ts,tsx}'"
@@ -27,6 +27,7 @@
     "@types/react-router-dom": "^5.3.3",
     "@typescript-eslint/eslint-plugin": "^5.45.0",
     "@typescript-eslint/parser": "^5.45.0",
+    "@unocss/transformer-attributify-jsx": "^0.47.5",
     "@vitejs/plugin-react": "^2.2.0",
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",

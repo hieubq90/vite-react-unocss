@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom'
 
-function PageNotFound() {
+function PageErrorServer() {
   return (
-    <div className="page-404 h-screen w-screen flex items-center justify-center">
-      <div className="page-404__contain">
-        <div className="text-2xl text-black mb-4">Xin lỗi, trang này không tồn tại.</div>
+    <div className="page-500 h-screen w-screen flex items-center justify-center">
+      <div className="page-500__contain">
+        <div className="text-2xl text-black mb-4">Xin lỗi, Máy chủ đang gặp sự cố.</div>
         <div className="text-center">
           <Link
             edso-bg="primary"
@@ -23,4 +23,4 @@ function PageNotFound() {
   )
 }
 
-export default PageNotFound
+export default PageErrorServer

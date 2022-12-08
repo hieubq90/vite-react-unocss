@@ -1,6 +1,12 @@
 
 @import './common/index.scss';
 
-body {
-  font-family: 'Roboto', sans-serif;
+
+
+html {
+  overflow-x: hidden;
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
 }

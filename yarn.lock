@@ -1623,7 +1623,7 @@
   resolved "https://registry.yarnpkg.com/@unocss/scope/-/scope-0.47.5.tgz#11287ff354a8e6d3c29df74e3b883f21ed0dc7ae"
   integrity sha512-vSYOyps6rJGcQztE4IsNkmFWIK06+3A780v+8PAn0wRbjqBoKZ1jCYL3NZ1ykCZBYPCXHcErlA2znIfb3ECbcw==
 
-"@unocss/transformer-attributify-jsx@0.47.5":
+"@unocss/transformer-attributify-jsx@0.47.5", "@unocss/transformer-attributify-jsx@^0.47.5":
   version "0.47.5"
   resolved "https://registry.yarnpkg.com/@unocss/transformer-attributify-jsx/-/transformer-attributify-jsx-0.47.5.tgz#d9c8f95c957e42af78c2f49ad5adc1424df4499d"
   integrity sha512-E+AnZBtDl5e8zudDNgtdQjv1QuEBCwXN6zxpnOdcXqh4omD7IRTGIzQYqEK5FcuNgqQgMVlWE/Tju/mY88v7cQ==

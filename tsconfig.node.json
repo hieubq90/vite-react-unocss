@@ -6,6 +6,8 @@
     "allowSyntheticDefaultImports": true
   },
   "include": [
+    "style.config",
+    "style.config.ts",
     "vite.config.ts",
     "unocss.config.ts"
   ]
