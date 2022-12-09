@@ -1,0 +1,17 @@
+.edso-tooltip.tippy-box {
+    background-color: var(--edso-primary);
+    word-break: break-word;
+
+    .tippy-arrow {
+        color: var(--edso-primary);
+    }
+
+    &.tooltip-white {
+        background-color: white;
+        box-shadow: 4px 8px 24px rgba(99, 101, 152, 0.2);
+
+        .tippy-arrow {
+            color: white;
+        }
+    }
+}

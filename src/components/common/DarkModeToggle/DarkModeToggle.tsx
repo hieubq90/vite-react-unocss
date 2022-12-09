@@ -1,17 +1,32 @@
-import React from 'react'
+import React, { useMemo } from 'react'
+import { TooltipWrapper } from '@/components/common/Tooltip'
 import { useDarkMode } from '@/hooks'
 
-const DarkModeToggle: React.FC = () => {
-  const darkMode = useDarkMode()
+const getToggleTooltip = (isDark: boolean) => {
+  if (isDark) return 'Switch to light mode'
+  return 'Switch to dark mode'
+}
 
+interface Props {
+  className?: string
+  darkIcon?: string
+  lightIcon?: string
+}
+
+const DarkModeToggle: React.FC<Props> = ({
+  className,
+  darkIcon = 'i-carbon-moon',
+  lightIcon = 'i-carbon-sun',
+}) => {
+  const darkMode = useDarkMode()
+  const tooltip = useMemo(() => getToggleTooltip(darkMode.value), [darkMode.value])
+  const darkIconClass = useMemo(() => `dark:${lightIcon}`, [lightIcon])
   return (
-    <button
-      className="!outline-none"
-      title={darkMode.value ? 'Switch to light mode' : 'Switch to dark mode'}
-      onClick={darkMode.toggle}
-    >
-      <span className="dark:i-carbon-moon i-carbon-sun block" aria-hidden="true" />
-    </button>
+    <TooltipWrapper tooltip={tooltip}>
+      <button className={`${className} !outline-none`} onClick={darkMode.toggle}>
+        <span className={`${darkIconClass} ${darkIcon} block1`} aria-hidden="true" />
+      </button>
+    </TooltipWrapper>
   )
 }
 

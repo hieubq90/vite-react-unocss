@@ -19,6 +19,8 @@ export const lightTheme = {
   '--edso-border-input': '#dbdfef',
   '--edso-border-table': '#e2e8f0',
   '--edso-background': '#ffffff',
+  '--edso-track-color': '#dbdfef',
+  '--edso-thumb-color': '#a2aebd',
 }
 
 export const darkTheme = {
@@ -42,6 +44,8 @@ export const darkTheme = {
   '--edso-border-input': '#dbdfef',
   '--edso-border-table': '#e2e8f0',
   '--edso-background': '#000000',
+  '--edso-track-color': '#dbdfef',
+  '--edso-thumb-color': '#a2aebd',
 }
 
 export const getCSSPreflights = (theme: any) =>
