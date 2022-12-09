@@ -1,10 +1,11 @@
 
 @import './common/index.scss';
 
-
-
 html {
   overflow-x: hidden;
+
+  background-color: var(--edso-background);
+  color: var(--edso-content);
 
   body {
     font-family: 'Roboto', sans-serif;

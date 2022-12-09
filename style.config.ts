@@ -18,6 +18,7 @@ export const lightTheme = {
   '--edso-content': '#667793',
   '--edso-border-input': '#dbdfef',
   '--edso-border-table': '#e2e8f0',
+  '--edso-background': '#ffffff',
 }
 
 export const darkTheme = {
@@ -37,9 +38,10 @@ export const darkTheme = {
   '--edso-indigo': '#374fc7',
   '--edso-title': '#3d5586',
   '--edso-subtitle': '#a2aebd',
-  '--edso-content': '#667793',
+  '--edso-content': '#ffffff',
   '--edso-border-input': '#dbdfef',
   '--edso-border-table': '#e2e8f0',
+  '--edso-background': '#000000',
 }
 
 export const getCSSPreflights = (theme: any) =>

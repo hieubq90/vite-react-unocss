@@ -1,9 +1,10 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import reactLogo from '@/assets/svg/react.svg'
 import viteLogo from '@/assets/svg/vite.svg'
+import { DarkModeToggle } from '@/components/common/DarkModeToggle'
 
 function HomePage() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
     <div className="">
@@ -17,7 +18,7 @@ function HomePage() {
       </div>
       <h1>Index Page</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
+        <DarkModeToggle />
       </div>
       <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
     </div>
